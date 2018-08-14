@@ -1,0 +1,11 @@
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\bin\Debug\netcoreapp2.0\RegLog.deps.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\bin\Debug\netcoreapp2.0\RegLog.runtimeconfig.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\bin\Debug\netcoreapp2.0\RegLog.runtimeconfig.dev.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\bin\Debug\netcoreapp2.0\RegLog.dll
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\bin\Debug\netcoreapp2.0\RegLog.pdb
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.csprojResolveAssemblyReference.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.csproj.CoreCompileInputs.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.AssemblyInfoInputs.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.AssemblyInfo.cs
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.dll
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RegLog\obj\Debug\netcoreapp2.0\RegLog.pdb

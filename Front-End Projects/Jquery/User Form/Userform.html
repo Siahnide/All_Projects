@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+    
+    </style>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $('#submit').click(function(){
+                var firstName = $("#FirstName").val();
+                var lastName = $("#LastName").val();
+                var email = $("#Email").val();
+                var phone = $("#Phone").val();
+
+                console.log(firstName)
+                $('#FN').append("<p>"+ firstName +"</p>")
+                $('#LN').append("<p>"+ lastName +"</p>")
+                $('#EA').append("<p>"+ email +"</p>")
+                $('#PN').append("<p>"+ phone +"</p>")
+                return false
+            })
+
+        });
+    </script>
+    <body>
+        <ul id="head">
+            <p >First Name</p>
+            <p >Last Name</p>
+            <p >Email Address</p>
+            <p >Phone #</p>
+        </ul>
+      <ul1 id="FN"></ul1>
+      <ul1 id="LN"></ul1>
+      <ul1 id="EA"></ul1>
+      <ul1 id="PN"></ul1>
+
+        
+        <h1>Add User</h1>
+
+        <form id="user">
+        
+                First Name:<input type="text" id="FirstName" name="FirstName">
+
+                Last Name:<input type="text" id="LastName" name="LastName">
+
+                Email:<input type="text" id="Email" name="Email">
+
+                Phone:<input type="text" id="Phone" name="Phone">
+                
+                <button id="submit">Add User</button>
+        </form>
+    </body>
+</html>
+    

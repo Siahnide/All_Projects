@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+@model VM
+<html>
+    <head>
+    <link rel='stylesheet' type='text/css' href='~/css/main.css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.js'></script> 
+    </head>
+    <script>
+        (document).ready(function(){
+        
+        });
+    </script>
+    <body>
+    <form asp-action='Register' asp-controller='Home' method='post'>
+        <div id='form_group'>
+            <span asp-validation-for='first_name'></span>
+            <label asp-for='first_name'></label>
+            <input asp-for='first_name'>
+        </div>
+        <div id='form_group'>
+            <span asp-validation-for='last_name'></span>
+            <label asp-for='last_name'></label>
+            <input asp-for='last_name'>
+        </div>
+        <div id='form_group'>
+            <span asp-validation-for='email'></span>
+            <label asp-for='email'></label>
+            <input asp-for='email'>
+        </div>
+        <div id='form_group'>
+            <span asp-validation-for='password'></span>
+            <label asp-for='password'></label>
+            <input asp-for='password'>
+        </div>
+        <div id='form_group'>
+            <span asp-validation-for='confirm'></span>
+            <label asp-for='confirm'></label>
+            <input asp-for='confirm'>
+        </div>
+        <input type='submit' value='Register'>
+    </form>
+
+    <form asp-action='Login' asp-controller='Home' method='post'>
+        <div id='form_group'>
+            <span asp-validation-for='email'></span>
+            <label asp-for='email'></label>
+            <input asp-for='email'>
+        </div>
+        <div id='form_group'>
+            <span asp-validation-for='password'></span>
+            <label asp-for='password'></label>
+            <input asp-for='password'>
+        </div>
+        <input type='submit' value='Login'>
+    </form>
+        
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'form/css/main.css' %}">
+</head>
+
+<div id="container">
+    <form action="/process" method="post">
+        {% csrf_token %}
+        <div id="input">Your Name:<input type="text" name="fullname"></div>
+        <div id="input">Dojo Location:<input type="text" name="location"></div>
+        <div id="input">Favorite Language:<input type="text" name="language"></div>
+        <div id="input">Comment (optional):<textarea name="comment"></textarea></div>
+        <div id="input"><input id="submit" type="submit" value="submit"></div>
+
+    
+    </form>
+
+
+
+</div>
+
+
+gunicorn --bind 0.0.0.0:8000 courses.wsgi:application
+
+
+
+[Unit]
+Description=gunicorn daemon
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/deployment
+ExecStart=/home/ubuntu/deployment/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/deployment/courses.sock courses.wsgi:application
+[Install]
+WantedBy=multi-user.target
+
+
+server {
+    listen 80;
+    server_name 18.217.237.158;
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/ubuntu/deployment;
+    }
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/deployment/courses.sock;
+    }
+  }
+
+  sudo ln -s /etc/nginx/sites-available/courses /etc/nginx/sites-enabled

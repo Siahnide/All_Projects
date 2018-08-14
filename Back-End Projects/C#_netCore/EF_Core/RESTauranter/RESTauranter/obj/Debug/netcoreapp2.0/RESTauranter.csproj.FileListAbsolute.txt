@@ -1,0 +1,11 @@
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.deps.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.runtimeconfig.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.runtimeconfig.dev.json
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.dll
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.pdb
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.csprojResolveAssemblyReference.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.csproj.CoreCompileInputs.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.AssemblyInfoInputs.cache
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.AssemblyInfo.cs
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.dll
+C:\Users\Josiah Savage\Desktop\Coding Dojo\DojoAssignments\C#_netCore\EF_Core\RESTauranter\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.pdb

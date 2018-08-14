@@ -1,0 +1,30 @@
+@model Review
+<h1>Write a new Review:</h1>
+<form asp-action='AddRev' asp-controller='Home' method='post'>
+    <div id='form_group'>
+        <span asp-validation-for='Name'></span>
+        <label asp-for='Name'></label>
+        <input asp-for='Name'>
+    </div>
+    <div id='form_group'>
+        <span asp-validation-for='RestaurantName'></span>
+        <label asp-for='RestaurantName'></label>
+        <input asp-for='RestaurantName'>
+    </div>
+    <div id='form_group'>
+        <span asp-validation-for='Content'></span>
+        <label asp-for='Content'></label>
+        <input asp-for='Content'>
+    </div>
+    <div id='form_group'>
+        <span asp-validation-for='Visited'></span>
+        <label asp-for='Visited'></label>
+        <input asp-for='Visited'>
+    </div>
+    <div id='form_group'>
+        <span asp-validation-for='Rating'></span>
+        <label asp-for='Rating'></label>
+        <input asp-for='Rating'>
+    </div>
+    <input type='submit' value='submit'>
+</form>

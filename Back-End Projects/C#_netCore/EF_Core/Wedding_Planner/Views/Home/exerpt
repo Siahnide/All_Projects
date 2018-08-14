@@ -1,0 +1,18 @@
+            foreach(RegUser u in w)
+            {
+                if(u.id == Model.Reg.id)
+                {
+                    bool Attending = true;
+                }
+            }
+            if(w.planner.id !=Reg.id && Attending == true)
+            {
+
+                <a href="/Delete/{@w.id}">Un-RSVP</a>
+            };
+            if(w.planner.id !=Reg.id && Attending == false)
+            {
+                <a href="/Delete/{@w.id}">RSVP</a>
+
+            };
+            Attending = false;

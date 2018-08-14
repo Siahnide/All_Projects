@@ -1,0 +1,11 @@
+@model RevModel
+<h1>Here</h1>
+@{
+    foreach( Review rev in @Model.reviews)
+    {
+        <h3><strong>Review</strong> for: @rev.RestaurantName  @rev.Rating</h3>
+        <p><strong>Reviewer</strong> @rev.Name  @rev.Visited</p>
+        <p>@rev.Content</p>
+        <hr>
+    }
+}

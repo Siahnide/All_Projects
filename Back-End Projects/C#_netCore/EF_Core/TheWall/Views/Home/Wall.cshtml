@@ -1,0 +1,61 @@
+@model VM
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='~/css/main.css'>
+</head>
+<body>
+<div id="header">
+</div>
+<h1>Welcome, @Model.Reg.first_name</h1>
+<div id="post">
+    <h3>Post a Message</h3>
+    <form asp-action='Create_Post' asp-controller='Home' method='post'>
+        <div id='form_group'>
+            <input type="hidden" asp-for="@Model.post._user" value="@Model.Reg">
+            <span asp-validation-for='@Model.post.content'></span>
+            
+            <input asp-for='@Model.post.content'>
+        </div>
+        <input type='submit' value='Post a Message' id="submit">
+    </form>
+</div>
+
+
+@{
+    foreach(Post p in @Model.posts)
+    {
+        <h3>@p.id @p._user.first_name @p._user.last_name at @p.created_at</h3>
+        <p>@p.content</p>
+        <hr>
+        @foreach(Comment c in @p.comments)
+        {
+            
+            <p><strong>@c._user.first_name @c._user.last_name @c.created_at</strong></p>
+            <p>@c.content</p>
+            <hr>
+        }
+        <form asp-action='Create_comment' asp-controller='Home' method='post'>
+            <div id='form_group'>
+                <input type="hidden" value="@p" asp-for="@Model.comment._post">
+                <input type="hidden" value="@p.id" asp-for="@Model.comment._postid">
+                <input type="hidden" value="@Model.Reg.id" asp-for="@Model.comment._userid">
+                <span asp-validation-for='@Model.comment.content'></span>
+                <label>Create a Comment</label>
+                <input asp-for='@Model.comment.content'>
+            </div>
+            <input type='submit' value='submit' id="submit">
+        </form>
+        <hr>
+    }
+}
+
+
+
+
+
+
+
+
+</body>
+</html>

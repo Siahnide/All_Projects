@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.js'></script> 
+    </head>
+    <script>
+        (document).ready(function(){
+        
+        });
+    </script>
+    <body>
+        @model Wedding
+        <h1>@Model.wedder_1 @Model.wedder_1 Wedding <a href="Dashboard">Dashboard</a> <a href="">Log Out</a></h1>
+        <h3>@Model.date</h3>
+
+        <h4>Guests</h4>
+        @{
+            foreach(Guest g in @Model.guests)
+            {
+                <p>g.first_name g.last_name</p>
+            }
+        }
+        <div id="map"></div>
+        <div id="floater"></div>
+    </body>
+</html>

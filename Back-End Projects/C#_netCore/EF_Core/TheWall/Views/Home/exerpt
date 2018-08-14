@@ -1,0 +1,17 @@
+@{
+    foreach(Post p in @Model.posts)
+    {
+        <h6>@p._user.first_name @p._user.last_name @p.created_at</h6>
+        <p>@p.content</p>
+        <form asp-action='Create_comment' asp-controller='Home' method='post'>
+            <div id='form_group'>
+                <input type="hidden" value="@p.id" asp-for="@Model.comment._post">
+                <input type="hidden" value="@Model.Reg.id" asp-for="@Model.comment._post">
+                <span asp-validation-for='@Model.comment.content'></span>
+                <label asp-for='@Model.comment.content'></label>
+                <input asp-for='@Model.comment.content'>
+            </div>
+            <input type='submit' value='submit' id="submit">
+        </form>
+    }
+}

@@ -1,0 +1,56 @@
+@model VM
+<h1>Register!</h1>
+<form asp-action='Register' asp-controller='Home' method='post'>
+    <div id='form_group'>
+        <span asp-validation-for='Reg.first_name'></span>
+        <label asp-for='Reg.first_name'></label>
+        <input asp-for='Reg.first_name'>
+    </div>
+    <div id="form_group">
+        <span asp-validation-for='Reg.last_name'></span>
+        <label asp-for='Reg.last_name'></label>
+        <input asp-for='Reg.last_name'>
+    </div>
+    <div id="form_group">
+        <span asp-validation-for='Reg.email'></span>
+        <label asp-for='Reg.email'></label>
+        <input asp-for='Reg.email'>
+    </div>
+    <div id="form_group">
+        <span asp-validation-for='Reg.password'></span>
+        <label asp-for='Reg.password'></label>
+        <input asp-for='Reg.password'>
+    </div>
+    <div id="form_group">
+        <span asp-validation-for='Reg.confirm'></span>
+        <label asp-for='Reg.confirm'></label>
+        <input asp-for='Reg.confirm'>
+    </div>
+    <input type='submit' value='submit'>
+</form>
+
+<h1>Log In!</h1>
+<form asp-action='Log' asp-controller='Home' method='post'>
+    <div id='form_group'>
+        <span asp-validation-for='Log.email'></span>
+        <label asp-for='Log.email'></label>
+        <input asp-for='Log.email'>
+    </div>
+    <div id='form_group'>
+        <span asp-validation-for='Log.password'></span>
+        <label asp-for='Log.password'></label>
+        <input asp-for='Log.password'>
+    </div>
+    <input type='submit' value='submit'>
+</form>
+
+
+
+@{
+    foreach(RegUser x in Model.Regs)
+    {
+        <hr>
+        @x.first_name @x.last_name
+        
+    }
+}

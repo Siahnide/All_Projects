@@ -1,0 +1,62 @@
+@model VM
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='~/css/main.css'>
+    </head>
+    <body>
+    
+    </body>
+</html>
+
+<div id="column">
+    <div id="header">Wedding</div>
+    @{
+        foreach(Wedding w in Model._weddings)
+        {
+            <div id='row'><a href="Wedding/@w.id">@w.wedder_1  @w.wedder_2</a> </div>
+        };  
+    }
+</div>
+<div id="column">
+    <div id="header">Date</div>
+    @{
+        foreach(Wedding w in Model._weddings)
+        {
+            <div id='row'> @w.date </div>
+        };
+    }
+    
+</div>
+<div id="column">
+    <div id="header">Guest</div>
+    @{
+        foreach(Wedding w in Model._weddings)
+        {
+            <div id='row'> <a></a>@w.guests.Count() </div>
+        };
+    }
+    
+</div>
+<div id="column">
+    <div id="header">Action</div>
+    @{
+        foreach(Wedding w in Model._weddings)
+        {
+            if(w.planner.id == Model._reguser.id)
+            {
+                <div id="row"><a href="/Delete/{@w.id}">Delete</a></div>
+            };
+            if(w.planner.id != Model._reguser.id && w.Attending(Model._reguser) == true)
+            {
+                <div id="row"><a href="/UNRSVP/{@w.id}">un-RSVP</a></div>
+            };
+            if(w.planner.id != Model._reguser.id && w.Attending(Model._reguser) == false)
+            {
+                <div id="row"><a href="/RSVP/{@w.id}">RSVP</a></div>
+            }
+
+        };
+    }
+    
+</div>
